@@ -1,9 +1,13 @@
 function count() {
-    let menu;
-     do { 
-         menu = prompt('To enter one of these operations: additions(+), subtraction(-), multiplication(*), division(/).');
-     } while (["+", "-", "*", "/"].indexOf(menu) === -1);
-     function getArgument(arg) {
+    function getMenu(argMenu) {
+        let result;
+        do {
+            result = prompt(argMenu);
+        } while(["+", "-", "*", "/"].indexOf(result) === -1);
+        return result;
+      }
+    const menu = getMenu("To enter one of these operations: additions(+), subtraction(-), multiplication(*), division(/).");
+    function getArgument(arg) {
         let result;
         do {
           result = +prompt(arg);
