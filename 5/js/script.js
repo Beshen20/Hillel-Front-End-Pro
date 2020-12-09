@@ -23,16 +23,12 @@ const students = [{
 function averageStudentMark(studentId) {
   const student = students.find(({
     id
-  }) => {
-    return id === studentId;
-  });
+  }) => id === studentId);
   if (student) {
     const {
       marks
     } = student;
-    return marks.reduce((acc, mark) => {
-      return acc + mark;
-    }, 0) / marks.length;
+    return marks.reduce((acc, mark) => acc + mark, 0) / marks.length;
   }
 }
 
@@ -40,7 +36,7 @@ function averageGroupMark() {
   const marks = students.map(({
     marks
   }) => marks).flat();
-  return marks.reduce((acc, mark) => acc + mark, 0) / students.length;
+  return marks.reduce((acc, mark) => acc + mark, 0) / marks.length;
 }
 console.log(averageStudentMark(13));
 console.log(Math.round(averageGroupMark()));
