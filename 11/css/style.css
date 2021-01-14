@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  list-style-type: none;
+}
+
+.todo {
+  margin: 0 auto;
+  background-color: #e4eaff;
+  width: 400px;
+  -webkit-box-shadow: 1px 1px 10px #e4eaff;
+  box-shadow: 1px 1px 10px #e4eaff;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+}
+
+.todo__header {
+  width: 100%;
+  height: 60px;
+  background-color: #b07fec;
+  -webkit-box-shadow: 1px 1px 10px #b07fec;
+  box-shadow: 1px 1px 10px #b07fec;
+}
+
+.todo__header h1 {
+  padding-top: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-style: italic;
+}
+
+.todo__task {
+  padding: 20px;
+}
+
+.todo__task .todoList {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+
+.bg {
+  background-color: yellow;
+}
+
+.bg-remove {
+  background-color: green;
+}
+
+.todo__task .todoList li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 45px;
+  line-height: 45px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.todo__task .todoList li p {
+  padding-left: 10px;
+  width: 88%;
+}
+
+.todo__task .todoList li .remove-button {
+  background: url(../img/delete.png) no-repeat;
+  background-position: center;
+  background-color: #da0a0a;
+  width: 33px;
+  border-radius: 1px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.todo__task form {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.todo__task form input {
+  padding: 0px 10px;
+  margin: 10px;
+  width: 250px;
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+}
+
+.todo__task form input::-webkit-input-placeholder {
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+
+.todo__task form input:-ms-input-placeholder {
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+
+.todo__task form input::-ms-input-placeholder {
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+
+.todo__task form input::placeholder {
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+
+.todo__task form input:-webkit-autofill,
+.todo__task form input:-webkit-autofill:hover,
+.todo__task form input:-webkit-autofill:focus {
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+.todo__task form button {
+  width: 180px;
+  height: 45px;
+  background-color: #b07fec;
+  color: #ffffff;
+  border-radius: 30px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
