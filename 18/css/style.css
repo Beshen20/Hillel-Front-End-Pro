@@ -1,0 +1,7 @@
+.table-footer {
+    text-align: center;
+}
+
+.form-input.invalid {
+    border-color: red;
+}

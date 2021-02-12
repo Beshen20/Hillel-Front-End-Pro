@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contacts</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/dark-theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" async></script>
+</head>
+<body>
+    <form id="newContactForm" class="form">
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Phone</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="contactsList"></tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        <input type="text" name="name" id="nameInput" class="form-input">
+                    </td>
+                    <td>
+                        <input type="text" name="surname" id="surnameInput" class="form-input">
+                    </td>
+                    <td>
+                        <input type="text" name="phone" id="phoneInput" class="form-input">
+                    </td>
+                    <td><button id="addContactBtn">Add Contact</button></td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+    <script type="text/template" id="contactTemplate">
+        <tr class="contact-row" id={{id}}>
+            <td onclick="copyContact(event)">{{name}}</td>
+            <td onclick="copyContact(event)">{{surname}}</td>
+            <td onclick="copyContact(event)">{{phone}}</td>
+            <td><button type="button" id="changeButton" onclick="changeContact(event)">Change contact</button></td>
+            <td><button type="button" class="delete-btn">Delete</button></td>
+        </tr>
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
