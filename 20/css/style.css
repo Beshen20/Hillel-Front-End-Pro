@@ -1,0 +1,75 @@
+body,
+html {
+    height: 100%;
+}
+
+input[type='text'],
+textarea {
+    width: 280px;
+    height: 220px;
+    color: rgb(0, 0, 0);
+}
+
+.header {
+    height: 50px;
+    padding-top: 15px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.header button {
+    display: block;
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+    margin: 0 auto;
+    border: none;
+    background-color: rgb(253, 172, 22);
+    color: white;
+    outline: none;
+}
+
+.header button:active {
+    background-color: white;
+    border: 2px solid rgb(253, 172, 22);
+    color: black;
+}
+
+.header button:hover {
+    background-color: rgb(233, 106, 16);
+}
+
+.note-description {
+    height: 240px;
+    width: 300px;
+}
+
+.note {
+    width: 200px;
+    background-color: rgb(253, 246, 151);
+    color: black;
+    margin: 10px;
+    padding: 5px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.note .delete-note {
+    float: right;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.note h5 {
+    margin-bottom: 5px;
+    cursor: move;
+}
+
+.note .note-body {
+    height: calc(100% - 36px);
+}
+
+.note textarea {
+    height: 100%;
+    width: 100%;
+    resize: none;
+}
