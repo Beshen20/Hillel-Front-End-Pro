@@ -1,0 +1,46 @@
+* {
+    list-style-type: none;
+}
+
+.todo-list {
+    margin-bottom: 20px;
+}
+
+.todo {
+    color: #555;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 5px 0;
+    font-size: 20px;
+    border-color: lightyellow;
+}
+
+.todo.done {
+    border-color: lightgreen;
+    background-color: chartreuse;
+}
+
+.delete-btn,
+.edit-btn {
+    float: right;
+    margin: 0 7px;
+    padding: 0;
+}
+
+form {
+    padding: 20px 40px;
+    text-align: center;
+}
+
+form input[type="text"] {
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+}
+
+form input[type="submit"] {
+    height: 40px;
+    margin-top: 7px;
+    cursor: pointer;
+}
