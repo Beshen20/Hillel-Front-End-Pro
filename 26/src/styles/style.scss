@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.table-wrap {
+
+}
+
+#table-students{
+  color: #fff;
+  border: 1px solid #9b9b9b;
+  background: white;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+#table-students tr th {
+  background: #5f5e91;
+  border: 1px solid #9b9b9b;
+  color: #fff;
+  padding: 15px 25px;
+}
+
+#table-students tr td {
+  text-align: center;
+  border: 1px solid #9b9b9b;
+  padding: 15px;
+  background-color: #6c6bff;
+}
+
+#table-students tr td.name-student {
+   text-align: left;
+}
+
+.mark-input {
+  width: 50px;
+  padding: 5px;
+  text-indent: 5px;
+}
+
+.insert-student-wrap{
+  max-width: 1039px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #5f5e91;
+  padding: 10px;
+}
+
+#insert-student {
+  height: 40px;
+  width: 300px;
+  border: none;
+  text-indent: 10px;
+  outline: none;
+
+}
+
+#insert-student-button{
+  height: 40px;
+  width: 150px;
+  outline: none;
+}
